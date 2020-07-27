@@ -1,0 +1,245 @@
+/* Google Font Add  */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a,a:hover{
+	text-decoration: none;
+	color: #000;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+font-family: 'Rubik', sans-serif;
+}
+/* Header Section Start  */
+#header{
+	width: 100%;
+	height: auto;
+	background-image: linear-gradient(48deg, #F3BD00 45%,#0C2B4B 45%);
+}
+#header .navbar-brand img{
+	width: 268px;
+    height: 127px;
+    margin: -10px 0 0 0;
+}
+/* Menu css */
+.navbar-toggler {
+    border: 1px solid rgba(0,0,0,0.9);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255,0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+#header .menu ul li{
+	position: relative;
+}
+#header .menu ul li a{
+	color: #fff;
+	font-size: 1.2rem;
+	transition: 0.3s ease;
+	border-bottom: 2px solid transparent;
+}
+#header .menu ul li a:hover{
+	border-bottom: 2px solid #F3BD00;
+}
+/* Dropdown Menu Css Start */
+.menu ul li ul {
+    list-style: none;
+    position: absolute;
+    background: #0C2B4B;
+    z-index: 100;
+    width: 155px;
+    padding: 10px 16px;
+    box-shadow: 0px 4px 7px 2px #0c2b4b;
+    left: -99999px;
+}
+.menu ul li:hover ul{
+	left: 0px;
+}
+.menu ul li ul li{
+	line-height: 36px;
+	    
+	}
+
+.menu ul li ul li a{
+	color: #000;
+}
+/* Dropdown Menu Css End */
+/* Header Section End  */
+
+
+
+
+/* Bannar Section Start */
+#bannar{
+	height: 100vh;
+	width: 100%;
+	background-image: url("../img/bannar/bannar.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	align-items: center;
+	color: #fff;
+	z-index: 1;
+	text-align: center;
+
+}
+#bannar::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.7);
+	z-index: -1;
+}
+#bannar .bannar_info{
+	border: 2px solid #F3BD00;
+    padding: 87px 10px;
+    border-radius: 17px;
+}
+#bannar .bannar_info h1{
+    font-size: 4rem;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+#bannar .bannar_info h2{
+    font-size: 3rem;
+    margin-top: 70px;
+    letter-spacing: 0.5rem;
+}
+/* Bannar Section End */
+
+
+/* Product Review Section Start */
+#product_review{
+	width: 100%;
+	height: auto;
+	margin-top: 60px;
+	padding: 50px 0;
+}
+#product_review .single_product{
+	margin: 0 auto 30px auto !important;
+}
+#product_review .product_img{
+	overflow: hidden;
+    border-radius: 13px 13px 0 0;
+    border: 2px solid #ccc;
+    margin-bottom: 0px;
+}
+#product_review .product_img img{
+	transition: 0.3s ease;
+    width: 100%;
+    height: 130px;
+}
+#product_review .product_img img:hover{
+	transform: scale(1.5);
+}
+
+#product_review .product_info{
+	background: #ccc;
+    padding: 25px 10px 25px 10px;
+    border-radius: 0px 0px 13px 13px;
+}
+#product_review .product_info h3{
+    font-size: 14px;
+}
+#product_review .product_info h3 span{
+	color: #008000;
+}
+#product_review .product_info h4{
+	    font-size: 13px;
+}
+#product_review .product_info h2{
+	font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+    margin: 26px 0 7px 0;
+}
+#product_review .product_info p{
+	font-size: 14px;
+    line-height: 26px;
+    text-align: justify;
+}
+#product_review .product_info a{
+    width: 100%;
+    height: 37px;
+    background: #0C2B4B;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+#product_review .product_info a:hover{
+	background: #F3BD00;
+}
+/* Product Review Section End */
+
+
+
+/* Contact Us section Start */
+#contact_us{
+	width: 100%;
+	height: auto;
+	margin-bottom: 80px;
+}
+#contact_us .contact_info>.section_title h1{
+	font-size: 4rem;
+	color: #3F3F4C;
+	letter-spacing: .4rem;
+	border-bottom: 2px solid #0C2B4B;
+	padding-bottom: 20px;
+	text-align: left;
+	margin-left: 20px;
+	text-transform: capitalize;
+}
+#contact_us .section_title h1 span{
+	color: #0C2B4B;
+}
+#contact_us .contact_info h1{
+	font-size: 1.8rem;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+#contact_us .contact_info h1 span{
+	color: #0C2B4B;
+}
+#contact_us .contact_info h2{
+	font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+#contact_us .contact_info h2 span{
+	color: #0C2B4B;
+}
+/* Contact Us section End */
+
+
+/* Footer Section Start */
+#footer{
+	width: 100%;
+    height: 87px;
+    padding: 32px 0 8px 5px;
+    background: #0C2B4B;
+    text-align: center;
+    color: #fff;
+}
+#footer p{
+	font-size: 17px;
+    letter-spacing: 2px;
+}
+
+/* Footer Section End */
+
